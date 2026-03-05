@@ -10,11 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class HelloWorldController throws InterruptedException {
+public class HelloWorldController{
     
     @GetMapping("/hello")
     public String hello()  {
-        Thread.sleep(10000)
         return "Hello All";
     }
 
